@@ -6,9 +6,13 @@ import ViewerPage from "./pages/ViewerPage";
 
 const defaultCategory = mainCategories[0]?.slug ?? "clovek";
 
+/** Na GitHub Pages je aplikace v podadresáři; BASE_URL končí lomítkem. */
+const routerBasename =
+  import.meta.env.BASE_URL === "/" ? undefined : import.meta.env.BASE_URL.replace(/\/$/, "");
+
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={routerBasename}>
       <Routes>
         <Route path="/" element={<Navigate to={`/${defaultCategory}`} replace />} />
         <Route path="/:categorySlug" element={<CatalogHome />} />
