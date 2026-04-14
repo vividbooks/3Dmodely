@@ -1,0 +1,57 @@
+/* Fenomen Sans — stejné zdroje jako Vividbooks40 (Supabase storage) */
+@font-face {
+  font-family: "Fenomen Sans";
+  src: url("https://jjpiguuubvmiobmixwgh.supabase.co/storage/v1/object/public/Admin%20math/Fenomen%20Sans%20Semi%20Bold.otf")
+    format("opentype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fenomen Sans";
+  src: url("https://jjpiguuubvmiobmixwgh.supabase.co/storage/v1/object/public/Admin%20math/Fenomen%20Sans%20Book.otf")
+    format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --page-bg: #f0f2f5;
+  --hub-bg: #f4f6fa;
+  --hub-navy: #1e3a5f;
+  --hub-accent: #2563eb;
+  --surface: #ffffff;
+  --text-primary: #4a4a4a;
+  --text-muted: #6b6b6b;
+  --accent: #6332fa;
+  --radius: 10px;
+  font-family: "Fenomen Sans", system-ui, -apple-system, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text-primary);
+  background-color: var(--page-bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}

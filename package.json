@@ -1,0 +1,28 @@
+{
+  "name": "3dmodely",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "thumbnails:fetch": "node scripts/fetch-sketchfab-thumbnails.mjs",
+    "thumbnails:refresh-clovek": "node scripts/fetch-sketchfab-thumbnails.mjs --refresh",
+    "thumbs:chrome": "node scripts/extract-sketchfab-thumbnail-chrome.mjs"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.13.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@types/react-router-dom": "^5.3.3",
+    "@vitejs/plugin-react": "^4.3.3",
+    "sharp": "^0.34.5",
+    "typescript": "~5.6.3",
+    "vite": "^5.4.11"
+  }
+}

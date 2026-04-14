@@ -1,0 +1,31 @@
+.vivid-pill {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.35rem;
+  margin: 0 0 1rem;
+  padding: 0.55rem 0.75rem;
+  max-width: 100%;
+  border-radius: var(--radius, 10px);
+  border: 2px solid color-mix(in srgb, var(--hub-cat-tab, #6332fa) 42%, transparent);
+  background: color-mix(in srgb, var(--hub-cat-tab, #6332fa) 9%, transparent);
+  color: var(--text-primary);
+  font-size: 0.72rem;
+  font-weight: 600;
+  line-height: 1.35;
+  box-sizing: border-box;
+}
+
+.vivid-pill__lead {
+  font-weight: 500;
+  opacity: 0.92;
+}
+
+.vivid-pill__link {
+  color: var(--hub-cat-tab, var(--accent));
+  text-decoration: none;
+}
+
+.vivid-pill__link:hover {
+  text-decoration: underline;
+}
