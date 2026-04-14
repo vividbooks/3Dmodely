@@ -127,6 +127,11 @@ export const houbyVyssiRostlinySubcategories: SubcategoryDef[] = [
     slug: "jehlicnany",
     title: "Jehličnany",
     tint: "mint",
+    hubPreview: {
+      thumbnailUrl:
+        "https://media.sketchfab.com/models/bf39586552e74d98883c01072e94efa6/thumbnails/12c0c8c646e24c41a97563300c5ba576/a65eee0fcd8347429713655f0040937a.jpeg",
+      sketchfabId: "bf39586552e74d98883c01072e94efa6",
+    },
     board: {
       id: "50142a3c-7c33-4b88-ba52-b6390ff23ae8",
       title: "Jehličnany",
