@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc --noEmit && vite build && node -e \"require('node:fs').copyFileSync('dist/index.html', 'dist/404.html')\"",
+    "build:hostinger": "tsc --noEmit && vite build --base / && node -e \"require('node:fs').copyFileSync('dist/index.html', 'dist/404.html')\"",
     "preview": "vite preview",
     "thumbnails:fetch": "node scripts/fetch-sketchfab-thumbnails.mjs",
     "thumbnails:refresh-clovek": "node scripts/fetch-sketchfab-thumbnails.mjs --refresh",
